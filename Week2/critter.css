@@ -1,0 +1,58 @@
+.face {
+    background-color: olive;
+    width: 200px;
+    height: 300px;
+    border-radius: 35%;
+}
+.leftEye {
+    background-color: beige;
+    border-radius: 50%;
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+.rightEye {
+    background-color: beige;
+    border-radius: 50%;
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    top: 150px;
+    left: 140px;
+}
+.iris {
+    background-color: skyblue;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 5px;
+    left: 9px;
+
+}
+.pupil {
+    background-color: black;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.mouth {
+    background-color: black;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    top: 240px;
+    left: 75px;
+
+}
+
+body, html {
+    margin: 0;
+    border: 0;
+}
