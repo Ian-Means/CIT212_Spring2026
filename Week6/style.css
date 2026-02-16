@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+nav {
+    background-color: pink;
+}
+nav a {
+    text-decoration: none;
+    margin: 0px 10px;
+}
+.wrapper {
+    position: absolute;
+    width: 100%;
+}
+article {
+    position: relative;
+    border: 4px ridge green;
+    width: 40%;
+    height: 700px;
+    margin: 10px 30px;
+}
+aside {
+    position: relative;
+    top: -710px;
+    left: 45%;
+    border: 4px groove green;
+    width: 40%;
+    height: 700px;
+    margin: 10px 30px;
+}
