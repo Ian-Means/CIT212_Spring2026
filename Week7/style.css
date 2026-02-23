@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.pin {
+    position: absolute;
+    width: 275px;
+    height: 300px;
+    border-radius: 15px;
+    border: 3px solid green;
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
