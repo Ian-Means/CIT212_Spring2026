@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houses</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    header {
+        position: relative;
+        background-color: palegreen;
+        width: 100vw;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    footer {
+        position: relative;
+        background-color:mediumseagreen;
+        width: 100vw;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+        /* height: 85vh; */
+        background-color: plum;
+    }
+    .houses {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 0 0 60vw;
+        background-color: lemonchiffon;
+        margin: 10px;
+    }
+    .card {
+        height: 200px;
+        flex: 0 0 200px;
+        background-color: darkorange;
+        border: 2px solid rosybrown;
+        border-radius: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+    .card img {
+        width: 80%;
+        margin-top: 10px;
+    }
+    .card p {
+        font-size: x-small;
+        text-align: left;
+        padding: 0px 4px;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 35vw;
+        background-color: dodgerblue;
+        margin: 10px;
+    }
+    .blurb {
+        position: relative;
+        flex: 0 0 20%;
+        background-color: honeydew;
+        border: 2px dotted darkgreen;
+        padding: 4px;
+        margin: 10px;
+    }
+    @media screen and (max-width: 900px){
+        .wrapper {
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        .info {
+            flex: 0 0 400px;
+        }
+    }
+    @media screen and (max-width: 500px){
+        .card {
+            height: 150px;
+            flex: 0 0 150px;
+            border-radius: 10px;
+        }
+        .card p {
+            display: none;
+        }
+    }
+</style>
+<body>
+    <header>
+        <h2>Property for Sale</h2>
+    </header>
+    <div class="wrapper">
+        <div class="houses">
+            <div class="card">
+                <img src="./houses/house1.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde ad quibusdam rem eum delectus sint vel neque architecto. Nisi et nobis quia delectus deleniti ea quo voluptatum placeat fuga!</p>
+            </div>
+            <div class="card">
+                <img src="./houses/house2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde ad quibusdam rem eum delectus sint vel neque architecto. Nisi et nobis quia delectus deleniti ea quo voluptatum placeat fuga!</p>
+            </div>
+            <div class="card">
+                <img src="./houses/house3.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde ad quibusdam rem eum delectus sint vel neque architecto. Nisi et nobis quia delectus deleniti ea quo voluptatum placeat fuga!</p>
+            </div>
+            <div class="card">
+                <img src="./houses/house4.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde ad quibusdam rem eum delectus sint vel neque architecto. Nisi et nobis quia delectus deleniti ea quo voluptatum placeat fuga!</p>
+            </div>
+            <div class="card">
+                <img src="./houses/house2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde ad quibusdam rem eum delectus sint vel neque architecto. Nisi et nobis quia delectus deleniti ea quo voluptatum placeat fuga!</p>
+            </div>
+            <div class="card">
+                <img src="./houses/house4.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde ad quibusdam rem eum delectus sint vel neque architecto. Nisi et nobis quia delectus deleniti ea quo voluptatum placeat fuga!</p>
+            </div>
+            <div class="card">
+                <img src="./houses/house1.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde ad quibusdam rem eum delectus sint vel neque architecto. Nisi et nobis quia delectus deleniti ea quo voluptatum placeat fuga!</p>
+            </div>
+            <div class="card">
+                <img src="./houses/house3.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde ad quibusdam rem eum delectus sint vel neque architecto. Nisi et nobis quia delectus deleniti ea quo voluptatum placeat fuga!</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="blurb">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste suscipit doloribus dolores, cum odit, eligendi, deserunt neque provident consectetur recusandae laborum magnam! Repellat esse laboriosam fugit cumque expedita quasi perferendis?
+                </p>
+            </div>
+            <div class="blurb">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste suscipit doloribus dolores, cum odit, eligendi, deserunt neque provident consectetur recusandae laborum magnam! Repellat esse laboriosam fugit cumque expedita quasi perferendis?
+                </p>
+            </div>
+            <div class="blurb">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste suscipit doloribus dolores, cum odit, eligendi, deserunt neque provident consectetur recusandae laborum magnam! Repellat esse laboriosam fugit cumque expedita quasi perferendis?
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer><h2>Some info about the site</h2></footer>
+</body>
+</html>
