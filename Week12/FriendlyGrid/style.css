@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: bisque;
+}
+.gridWrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    height: 100vh;
+}
+header {
+    grid-row: 1/2;
+    grid-column: 1/6;
+    background-color: lightslategrey;
+    border-radius: 10px;
+}
+nav {
+    grid-row: 2/3;
+    grid-column: 1/6;
+    background-color: sandybrown;
+    border-radius: 10px;
+}
+article {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    background-color: darkolivegreen;
+    border-radius: 10px;
+}
+aside {
+    grid-row: 3/4;
+    grid-column: 4/6;
+    background-color: darkorchid;
+    border-radius: 10px;
+}
+footer {
+    grid-row: 4/5;
+    grid-column: 1/6;
+    background-color: palevioletred;
+    border-radius: 10px;
+}
