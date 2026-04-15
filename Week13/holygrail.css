@@ -1,0 +1,66 @@
+/* Apply to all elements */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* COLORS and FONTS */
+
+body {
+    color: rgb(22, 21, 21);
+    text-align: center;
+}
+
+/* Can choose to default to special layout or desktop layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    }
+
+header {
+    height: 100px;
+    background: #e1f7f7;
+    font-size: 150%;
+}
+
+main {
+    background: #bed1d1;
+    text-align: left;
+}
+
+footer {
+    background: #e1f7f7;
+}
+
+.right-sidebar {
+    background: #83a3a3;
+    color: gainsboro;
+}
+
+
+/* full screen type layout */
+@media all and (min-width: 768px) {
+    .container {
+    flex-direction: row;
+   flex-wrap: wrap; 
+   }
+  header,
+  footer {
+    width: 100%;
+    }
+   main {
+   flex: 2;
+     order: 2;
+   /* vh is viewport height, a screen unit */
+ min-height: 80vh;
+   }
+  
+  .right-sidebar {
+     flex: 1;
+     order: 3;
+   }
+   footer {
+   order: 4;
+   }
+    }
